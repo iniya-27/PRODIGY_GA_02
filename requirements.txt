@@ -1,0 +1,10 @@
+torch==2.1.0
+torchvision==0.16.0
+diffusers==0.25.0
+transformers==4.38.2
+accelerate==0.30.0
+huggingface-hub==0.23.4
+safetensors==0.4.3
+Pillow==10.2.0
+matplotlib==3.8.2
+numpy==1.26.4
