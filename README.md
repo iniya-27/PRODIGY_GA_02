@@ -4,9 +4,9 @@
 Utilize pre-trained generative models to create images from text prompts.
 
 ## 📋 Description
-This project is part of my Generative AI Internship at Prodigy InfoTech. I have used 
-Stable Diffusion v1.5, a powerful pre-trained text-to-image model, to generate images 
-from text prompts. The project covers multiple experiments to understand how different 
+This project is part of my Generative AI Internship at Prodigy InfoTech. I have used
+Stable Diffusion v1.5, a powerful pre-trained text-to-image model, to generate images
+from text prompts. The project covers multiple experiments to understand how different
 parameters affect the quality and style of generated images.
 
 ## 🛠️ Tech Stack
@@ -24,14 +24,25 @@ parameters affect the quality and style of generated images.
 | `requirements.txt` | All required Python libraries with versions |
 
 ## 🔬 Experiments Conducted
-| Experiment | Description |
+| Experiment | Images | Description |
+|---|---|---|
+| Text to Image Generation | 4 | Generated images from 4 different text prompts |
+| Effect of Guidance Scale | 3 | Tested values 3.0, 7.5, 12.0 on same prompt |
+| Effect of Inference Steps | 3 | Compared 10, 20, 30 steps on same prompt |
+| Effect of Negative Prompts | 3 | No prompt vs basic vs detailed negative prompt |
+| Different Art Styles | 6 | Same subject in 6 different artistic styles |
+| Custom Prompt | 1 | Personal custom generated image |
+
+## 📊 Results
+| Parameter | Value |
 |---|---|
-| Text to Image Generation | Generated images from 4 different text prompts |
-| Effect of Guidance Scale | Tested values 3.0, 7.5, 12.0 on same prompt |
-| Effect of Inference Steps | Compared 10, 20, 30 steps on same prompt |
-| Effect of Negative Prompts | Compared no prompt vs basic vs detailed negative prompt |
-| Different Art Styles | Same subject in 6 styles — Oil, Watercolor, Anime, Photorealistic, Pixel Art, Sketch |
-| Custom Prompt | Generated a personal custom image |
+| Model | Stable Diffusion v1.5 |
+| Image Size | 512 x 512 pixels |
+| Total Images Generated | 20 |
+| Default Inference Steps | 25 |
+| Default Guidance Scale | 7.5 |
+| Generation Time per Image | ~5 seconds (T4 GPU) |
+| Device | CUDA (T4 GPU) |
 
 ## 💡 Key Concepts Learned
 - How Stable Diffusion works (Text Encoder → Diffusion Model → Decoder)
@@ -39,17 +50,7 @@ parameters affect the quality and style of generated images.
 - Effect of guidance scale on image creativity vs accuracy
 - Effect of inference steps on image quality
 - How negative prompts improve image quality
-- Generating images in different artistic styles
-
-## 📊 Results
-| Parameter | Value |
-|---|---|
-| Model | Stable Diffusion v1.5 |
-| Image Size | 512 x 512 pixels |
-| Total Images Generated | 17 |
-| Default Inference Steps | 25 |
-| Default Guidance Scale | 7.5 |
-| Device | CUDA (T4 GPU) |
+- Generating same subject in different artistic styles
 
 ## ▶️ How to Run
 1. Open Google Colab
