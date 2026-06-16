@@ -1,3 +1,8 @@
+# =============================================================
+#   Task 02 — Image Generation with Stable Diffusion
+#   Run this in Google Colab (Runtime → GPU recommended)
+# =============================================================
+
 import torch
 import matplotlib.pyplot as plt
 from PIL import Image
